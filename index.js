@@ -1,12 +1,21 @@
 import express from 'express';
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+
 const app = express();
+const port =  parseInt(process.env.PORT) || 8080;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}!!`);
+  res.send(`Hello ${name}!!!`);
 });
-
-const port = parseInt(process.env.PORT) || 8080;
+ 
 app.listen(port, () => {
   console.log(`helloworld: listening on port ${port}`);
 });
