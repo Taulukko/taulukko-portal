@@ -10,12 +10,12 @@ const port =  parseInt(process.env.PORT) || 8080;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  const name = process.env.NAME || 'World';
+  res.send(`Hello ${name}!!!!`);
 });
  
 app.listen(port, () => {
-  console.log(`Taulukko Portal: listening on port ${port}`);
+  console.log(`Taulukko: listening on port ${port}`);
 });
