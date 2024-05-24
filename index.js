@@ -14,8 +14,7 @@ const __dirname = dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}!`);
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
  
 app.listen(port, () => {
