@@ -17,4 +17,4 @@ Critérios de aceite sugeridos:
 4. taulukko-commons está declarado em dependencies e instalado.
 5. Os metadados genéricos como helloworld e descrição placeholder deixam de existir no package.json.
 6. Se scripts ou fluxo de execução mudarem, o README.md deve ser atualizado junto.
-- [ ] Olhar o layout do taulukko, seguindo as boas práticas, modernizar o código da página inicial de modo que fique responsivo e mais elegante. Mantenha as cores laranja, verde e branco pois são as cores do logo, mas pode adicionar mais cores na paleta se precisar.
+✅ Olhar o layout do taulukko, seguindo as boas práticas, modernizar o código da página inicial de modo que fique responsivo e mais elegante. Mantenha as cores laranja, verde e branco pois são as cores do logo, mas pode adicionar mais cores na paleta se precisar.
