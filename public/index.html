@@ -200,9 +200,17 @@
         </main>
 
         <footer class="site-footer">
-            <p>Taulukko 2008-2026 pertence a Edson Vicente Carli Junior.</p>
+            <p>Taulukko 2008-<span id="footer-year"></span> pertence a Edson Vicente Carli Junior.</p>
             <p>Feito para manter viva a história do projeto e reunir o que continua em movimento.</p>
         </footer>
     </div>
+    <script>
+        const currentYear = new Date().getFullYear();
+        const footerCurrentYearElement = document.getElementById('footer-year');
+
+        if (footerCurrentYearElement) {
+            footerCurrentYearElement.textContent = String(currentYear);
+        }
+    </script>
 </body>
 </html>
